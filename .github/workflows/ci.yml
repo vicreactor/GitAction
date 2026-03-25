@@ -12,4 +12,11 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
       - name: Show files
-        run: ls -la 
+        run: ls -la
+      - name: setup Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - name: Check Java version
+        run: java -version
