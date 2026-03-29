@@ -23,6 +23,6 @@ jobs:
       - name: Download dependencies
         run: mvn dependency:resolve
       - name: Create a project buid
-	run: mvn clean package
+        run: mvn clean package
       - name: Run unit tests
-	run: mvn test
+        run: mvn test
