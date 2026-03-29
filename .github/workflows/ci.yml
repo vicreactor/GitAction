@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  test-allmost-prod:
+  pre-stage-actions:
     runs-on: ubuntu-latest
 
     steps:
